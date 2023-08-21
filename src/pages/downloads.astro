@@ -1,0 +1,270 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	
+	<body>
+		<Header title={SITE_TITLE} />
+        <main>
+            <article>
+              <!-- 
+                - #ABOUT
+              -->
+        
+              <section class="section about" id="about" aria-label="about">
+                <div class="container">
+        
+                  <div class="about-banner has-after">
+                    <img src="./test-ai-2fit.png" width="660" height="648" loading="lazy" alt="about banner"
+                      class="w-100">
+        
+                    <img src="./about-circle-one.png" width="660" height="534" loading="lazy" aria-hidden="true"
+                      alt="" class="circle circle-1">
+                    <img src="./about-circle-two.png" width="660" height="534" loading="lazy" aria-hidden="true"
+                      alt="" class="circle circle-2">
+        
+                    <img src="./fitness.png" width="650" height="154" loading="lazy" alt="fitness"
+                      class="abs-img w-100">
+                  </div>
+        
+                  <div class="about-content">
+        
+                    <p class="section-subtitle">Complete Package</p>
+        
+                    <h2 class="h2 section-title">Spartan Synergy All-In-One Program</h2>
+        
+                    <p class="section-text">
+                        Embark on an epic journey of transformation with our "Spartiate Ascendancy Complete Package". This comprehensive program is a potent blend of our Spartiate Physique Training Program and Ambrosia Nutrition Plan. Here, you're not just training and eating - you're adopting a lifestyle that brings the might and discipline of Sparta into the modern world. Like Hephaestus forging mighty weapons for the Olympians, we'll forge a body and spirit that transcends the mortal realm.</p>
+        
+                    <p class="section-text">
+                        Your path to godlike fitness begins here. Embrace the Sparta within and ascend to Olympian heights of physical prowess! 
+                    </p>
+        
+                    <div class="wrapper">
+        
+                      <div class="about-coach">
+        
+                        <figure class="coach-avatar">
+                          <img src="./about-coach.jpg" width="65" height="65" loading="lazy" alt="Trainer">
+                        </figure>
+        
+                        <div>
+                          <h3 class="h3 coach-name">Greek God Gains</h3>
+        
+                          <p class="coach-title">The Coach</p>
+                        </div>
+        
+                      </div>
+        
+                      <a href="https://buy.stripe.com/6oE00F5cG1VCbQIbIK" class="btn btn-primary" target="_blank">BEGIN NOW!</a>
+        
+                    </div>
+        
+                  </div>
+        
+                </div>
+              </section>
+        
+              <section class="section class bg-dark has-bg-image" id="class" aria-label="class"
+                style="background-image: url('./classes-bg.png'); padding: 0; ">
+                <div class="container">
+                    <br><br>
+        
+                  <p class="section-subtitle">This Program</p>
+        
+                  <h2 class="h2 section-title text-center">In This Program You Will Find:</h2>
+        
+                  <ul class="class-list has-scrollbar">
+        
+                    <li class="scrollbar-item">
+                      <div class="class-card">
+        
+                        <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                          <img src="./class-1.jpg" width="416" height="240" loading="lazy" alt="Weight Lifting"
+                            class="img-cover">
+                        </figure>
+        
+                        <div class="card-content">
+        
+                          <div class="title-wrapper">
+                            <img src="./class-icon-1.png" width="52" height="52" aria-hidden="true" alt=""
+                              class="title-icon">
+        
+                            <h3 class="h3">
+                              <a href="#" class="card-title">Spartiate Physique Training Program</a>
+                            </h3>
+                          </div>
+        
+                          <p class="card-text">
+                            Awaken your inner warrior - sculpt an unyielding physique, Spartan-style!
+                          </p>
+        
+                          <div class="card-progress">
+        
+                            <div class="progress-wrapper">
+                              <p class="progress-label">Difficulty</p>
+        
+                              <span class="progress-value">85%</span>
+                            </div>
+        
+                            <div class="progress-bg">
+                              <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+        
+                          </div>
+        
+                        </div>
+        
+                      </div>
+                    </li>
+        
+                    <li class="scrollbar-item">
+                      <div class="class-card">
+        
+                        <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                          <img src="./class-2.jpg" width="416" height="240" loading="lazy" alt="Cardio & Strenght"
+                            class="img-cover">
+                        </figure>
+        
+                        <div class="card-content">
+        
+                          <div class="title-wrapper">
+                            <img src="./class-icon-4.png" width="52" height="52" aria-hidden="true" alt=""
+                              class="title-icon">
+        
+                            <h3 class="h3">
+                              <a href="#" class="card-title">Ambrosia Nutrition Plan</a>
+                            </h3>
+                          </div>
+        
+                          <p class="card-text">
+                            Feast on divine power - fuel your conquest with our nutrition blueprint!
+                          </p>
+        
+                          <div class="card-progress">
+        
+                            <div class="progress-wrapper">
+                              <p class="progress-label">Difficulty</p>
+        
+                              <span class="progress-value">70%</span>
+                            </div>
+        
+                            <div class="progress-bg">
+                              <div class="progress-bar" style="width: 70%"></div>
+                            </div>
+        
+                          </div>
+        
+                        </div>
+        
+                      </div>
+                    </li>
+        <!-- 
+                    <li class="scrollbar-item">
+                      <div class="class-card">
+        
+                        <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                          <img src="./class-3.jpg" width="416" height="240" loading="lazy" alt="Power Yoga"
+                            class="img-cover">
+                        </figure>
+        
+                        <div class="card-content">
+        
+                          <div class="title-wrapper">
+                            <img src="./class-icon-3.png" width="52" height="52" aria-hidden="true" alt=""
+                              class="title-icon">
+        
+                            <h3 class="h3">
+                              <a href="#" class="card-title">Spartan Synergy All-In-One Program</a>
+                            </h3>
+                          </div>
+        
+                          <p class="card-text">
+                            Become the legend - embark on an all-encompassing odyssey to godlike fitness!
+                          </p>
+        
+                          <div class="card-progress">
+        
+                            <div class="progress-wrapper">
+                              <p class="progress-label">Difficulty</p>
+        
+                              <span class="progress-value">90%</span>
+                            </div>
+        
+                            <div class="progress-bg">
+                              <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+        
+                          </div>
+        
+                        </div>
+        
+                      </div>
+                    </li>
+        
+                    <li class="scrollbar-item">
+                      <div class="class-card">
+        
+                        <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+                          <img src="./class-4.jpg" width="416" height="240" loading="lazy" alt="The Fitness Pack"
+                            class="img-cover">
+                        </figure>
+        
+                        <div class="card-content">
+        
+                          <div class="title-wrapper">
+                            <img src="./class-icon-4.png" width="52" height="52" aria-hidden="true" alt=""
+                              class="title-icon">
+        
+                            <h3 class="h3">
+                              <a href="#" class="card-title">The Fitness Pack</a>
+                            </h3>
+                          </div>
+        
+                          <p class="card-text">
+                            Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.
+                          </p>
+        
+                          <div class="card-progress">
+        
+                            <div class="progress-wrapper">
+                              <p class="progress-label">Class Full</p>
+        
+                              <span class="progress-value">60%</span>
+                            </div>
+        
+                            <div class="progress-bg">
+                              <div class="progress-bar" style="width: 60%"></div>
+                            </div>
+        
+                          </div>
+        
+                        </div>
+                        
+        
+                      </div>
+                    </li> -->
+        
+                  </ul>
+                  <br>
+                  <div style="display: flex; justify-content: center; align-items: center">
+                    <a href="https://buy.stripe.com/6oE00F5cG1VCbQIbIK" class="btn btn-primary" target="_blank">Get Started</a>
+                </div>
+                </div>
+                <br> <br>
+              </section>
+        
+            </article>
+          </main>
+		<Footer />
+		<script src="./script.js" defer></script>
+	</body>
+</html>

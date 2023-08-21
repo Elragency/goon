@@ -10,41 +10,460 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
+	
 	<body>
 		<Header title={SITE_TITLE} />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/pages/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
+			<article>
+		
+			  <!-- 
+				- #HERO
+			  -->
+		
+			  <section class="section hero bg-dark has-after has-bg-image" id="home" aria-label="hero" data-section
+				style="background-image: url('./hero-bg.png')">
+				<div class="container">
+		
+				  <div class="hero-content">
+		
+					<p class="hero-subtitle">
+					  <strong class="strong">The Worst</strong>DJ
+					</p>
+		
+					<h1 class="h1 hero-title">GOON</h1>
+		
+					<p class="section-text">
+					  Not the DJ you wanted, nor deserved, IDK what you want honestly.
+					</p>
+		
+					<a href="https://www.youtube.com/itsgoon" target="_blank"class="btn btn-primary">Subscribe!</a>
+		
+				  </div>
+		
+				  <div class="hero-banner">
+		
+					<img src="./test.png" width="660" height="753" alt="hero banner" class="w-100">
+		
+					<img src="./hero-circle-one.png" width="666" height="666" aria-hidden="true" alt=""
+					  class="circle circle-1">
+					<img src="./hero-circle-two.png" width="666" height="666" aria-hidden="true" alt=""
+					  class="circle circle-2">
+		
+					<img src="./listeners.svg" width="255" height="270" alt="heart rate"
+					  class="abs-img abs-img-1">
+					<img src="./youtube.svg" width="348" height="224" alt="calories" class="abs-img abs-img-2">
+		
+				  </div>
+		
+				</div>
+			  </section>
+		
+		
+		
+		
+		
+			  <!-- 
+				- #ABOUT
+			  -->
+		
+			  <section class="section about" id="about" aria-label="about">
+				<div class="container">
+		
+				  <div class="about-banner has-after">
+					<img src="./me.png" width="660" height="648" loading="lazy" alt="about banner"
+					  class="w-100">
+		
+					<img src="./about-circle-one.png" width="660" height="534" loading="lazy" aria-hidden="true"
+					  alt="" class="circle circle-1">
+					<img src="./about-circle-two.png" width="660" height="534" loading="lazy" aria-hidden="true"
+					  alt="" class="circle circle-2">
+		
+					<img src="./fitness.png" width="650" height="154" loading="lazy" alt="fitness"
+					  class="abs-img w-100">
+				  </div>
+		
+				  <div class="about-content">
+		
+					<p class="section-subtitle">About Me</p>
+		
+					<h2 class="h2 section-title">Professional Retard, Part-time producer</h2>
+		
+					<p class="section-text">
+					  I know nobody gives a shit, click on the link down below to get access to all the downloads!
+					</p>
+		
+					<p class="section-text">
+					  Consider subscribing, I post a video at least once every year or two, I think.
+					</p>
+		
+					<div class="wrapper">
+		
+					  <div class="about-coach">
+		
+						<figure class="coach-avatar">
+						  <img src="./about-coach.jpg" width="65" height="65" loading="lazy" alt="Trainer">
+						</figure>
+		
+						<div>
+						  <h3 class="h3 coach-name">Goon</h3>
+		
+						  <p class="coach-title">Incompetent Producer</p>
+						</div>
+		
+					  </div>
+		
+					  <a href="https://bit.ly/45hcg4u" target="_blank" class="btn btn-primary">Downloads</a>
+		
+					</div>
+		
+				  </div>
+		
+				</div>
+			  </section>
+
+			  <!-- 
+				- #CLASS
+			  -->
+		
+			  <section class="section class bg-dark has-bg-image padding1" id="class" aria-label="class"
+				style="background-image: url('./classes-bg.png')">
+				<div class="container">
+		
+				  <p class="section-subtitle">My Downloads</p>
+		
+				  <h2 class="h2 section-title text-center">Come Get Your Free Ressources</h2>
+		
+				  <ul class="class-list has-scrollbar">
+		
+					<li class="scrollbar-item">
+					  <div class="class-card">
+		
+						<figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+						  <img src="./final-bx/pegasusbx1.png" width="416" height="240" loading="lazy" alt="Weight Lifting"
+							class="img-cover">
+						</figure>
+		
+						<div class="card-content">
+		
+						  <div class="title-wrapper">
+							<img src="./dow1.png" width="52" height="52" aria-hidden="true" alt=""
+							  class="title-icon">
+		
+							<h3 class="h3">
+							  <a href="https://bit.ly/45hcg4u" target="_blank" class="card-title">PEGASUS PACK</a>
+							</h3>
+						  </div>
+		
+						  <p class="card-text">
+							Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.
+						  </p>
+		
+						  <div class="card-progress">
+		
+							<div class="progress-wrapper">
+							  <p class="progress-label">Class Full</p>
+		
+							  <span class="progress-value">85%</span>
+							</div>
+		
+							<div class="progress-bg">
+							  <div class="progress-bar" style="width: 85%"></div>
+							</div>
+		
+						  </div>
+		
+						</div>
+		
+					  </div>
+					</li>
+		
+					<li class="scrollbar-item">
+					  <div class="class-card">
+		
+						<figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+						  <img src="./cerberusbx.png" width="416" height="240" loading="lazy" alt="Cerberus soundbanks box"
+							class="img-cover">
+						</figure>
+		
+						<div class="card-content">
+		
+						  <div class="title-wrapper">
+							<img src="./dow1.png" width="52" height="52" aria-hidden="true" alt=""
+							  class="title-icon">
+		
+							<h3 class="h3">
+							  <a href="https://bit.ly/45hcg4u" target="_blank" class="card-title">Cerberus Soundbanks</a>
+							</h3>
+						  </div>
+		
+						  <p class="card-text">
+							Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.
+						  </p>
+		
+						  <div class="card-progress">
+		
+							<div class="progress-wrapper">
+							  <p class="progress-label">Class Full</p>
+		
+							  <span class="progress-value">70%</span>
+							</div>
+		
+							<div class="progress-bg">
+							  <div class="progress-bar" style="width: 70%"></div>
+							</div>
+		
+						  </div>
+		
+						</div>
+		
+					  </div>
+					</li>
+		
+					<li class="scrollbar-item">
+					  <div class="class-card">
+		
+						<figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+						  <img src="./festivalbx.png" width="416" height="240" loading="lazy" alt="Festival Drop FLP box"
+							class="img-cover">
+						</figure>
+		
+						<div class="card-content">
+		
+						  <div class="title-wrapper">
+							<img src="./dow1.png" width="52" height="52" aria-hidden="true" alt=""
+							  class="title-icon">
+		
+							<h3 class="h3">
+								<a href="https://bit.ly/45hcg4u" target="_blank" class="card-title">Festival Drop FLP</a>
+							</h3>
+						  </div>
+		
+						  <p class="card-text">
+							Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.
+						  </p>
+		
+						  <div class="card-progress">
+		
+							<div class="progress-wrapper">
+							  <p class="progress-label">Class Full</p>
+		
+							  <span class="progress-value">90%</span>
+							</div>
+		
+							<div class="progress-bg">
+							  <div class="progress-bar" style="width: 90%"></div>
+							</div>
+		
+						  </div>
+		
+						</div>
+		
+					  </div>
+					</li>
+		
+					<li class="scrollbar-item">
+					  <div class="class-card">
+		
+						<figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+						  <img src="./followbx.png" width="416" height="240" loading="lazy" alt="The Fitness Pack"
+							class="img-cover">
+						</figure>
+		
+						<div class="card-content">
+		
+						  <div class="title-wrapper">
+							<img src="./dow1.png" width="52" height="52" aria-hidden="true" alt=""
+							  class="title-icon">
+		
+							<h3 class="h3">
+							  <a href="https://bit.ly/45hcg4u" target="_blank" class="card-title">Follow FLP - Goon's Remake</a>
+							</h3>
+						  </div>
+		
+						  <p class="card-text">
+							Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.
+						  </p>
+		
+						  <div class="card-progress">
+		
+							<div class="progress-wrapper">
+							  <p class="progress-label">Class Full</p>
+		
+							  <span class="progress-value">60%</span>
+							</div>
+		
+							<div class="progress-bg">
+							  <div class="progress-bar" style="width: 60%"></div>
+							</div>
+		
+						  </div>
+		
+						</div>
+		
+					  </div>
+					</li>
+					<li class="scrollbar-item">
+						<div class="class-card">
+		  
+						  <figure class="card-banner img-holder" style="--width: 416; --height: 240;">
+							<img src="./focusbx.png" width="416" height="240" loading="lazy" alt="Focus FLP - GOON Box"
+							  class="img-cover">
+						  </figure>
+		  
+						  <div class="card-content">
+		  
+							<div class="title-wrapper">
+							  <img src="./dow1.png" width="52" height="52" aria-hidden="true" alt=""
+								class="title-icon">
+		  
+							  <h3 class="h3">
+								<a href="https://bit.ly/45hcg4u" target="_blank" class="card-title">Focus FLP - GOON</a>
+							  </h3>
+							</div>
+		  
+							<p class="card-text">
+							  Suspendisse nisi libero, cursus ac magna sit amet, fermentum imperdiet nisi.
+							</p>
+		  
+							<div class="card-progress">
+		  
+							  <div class="progress-wrapper">
+								<p class="progress-label">Class Full</p>
+		  
+								<span class="progress-value">60%</span>
+							  </div>
+		  
+							  <div class="progress-bg">
+								<div class="progress-bar" style="width: 60%"></div>
+							  </div>
+		  
+							</div>
+		  
+						  </div>
+		  
+						</div>
+					  </li>
+		
+				  </ul>
+				  <br> <br>
+				  <div class="centerthat"> 
+				  <a href="https://bit.ly/45hcg4u" target="_blank" class="btn btn-primary">ALL DOWNLOADS</a>
+				  </div>
+
+				  
+		
+				</div>
+			  </section>
+		
+		
+		
+		
+		
+			  <!-- 
+				- #BLOG
+			  -->
+		
+			  <!-- <section class="section blog" id="blog" aria-label="blog">
+				<div class="container">
+		
+				  <p class="section-subtitle">Our News</p>
+		
+				  <h2 class="h2 section-title text-center">Latest Blog Feed</h2>
+		
+				  <ul class="blog-list has-scrollbar">
+		
+					<li class="scrollbar-item">
+					  <div class="blog-card">
+		
+						<div class="card-banner img-holder" style="--width: 440; --height: 270;">
+						  <img src="./blog-1.jpg" width="440" height="270" loading="lazy"
+							alt="Going to the gym for the first time" class="img-cover">
+		
+						  <time class="card-meta" datetime="2022-07-07">7 July 2022</time>
+						</div>
+		
+						<div class="card-content">
+		
+						  <h3 class="h3">
+							<a href="#" class="card-title">Going to the gym for the first time</a>
+						  </h3>
+		
+						  <p class="card-text">
+							Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In hac
+							habitasse platea dictumst.
+						  </p>
+		
+						  <a href="#" class="btn-link has-before">Read More</a>
+		
+						</div>
+		
+					  </div>
+					</li>
+		
+					<li class="scrollbar-item">
+					  <div class="blog-card">
+		
+						<div class="card-banner img-holder" style="--width: 440; --height: 270;">
+						  <img src="./blog-2.jpg" width="440" height="270" loading="lazy"
+							alt="Parturient accumsan cacus pulvinar magna" class="img-cover">
+		
+						  <time class="card-meta" datetime="2022-07-07">7 July 2022</time>
+						</div>
+		
+						<div class="card-content">
+		
+						  <h3 class="h3">
+							<a href="#" class="card-title">Parturient accumsan cacus pulvinar magna</a>
+						  </h3>
+		
+						  <p class="card-text">
+							Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In hac
+							habitasse platea dictumst.
+						  </p>
+		
+						  <a href="#" class="btn-link has-before">Read More</a>
+		
+						</div>
+		
+					  </div>
+					</li>
+		
+					<li class="scrollbar-item">
+					  <div class="blog-card">
+		
+						<div class="card-banner img-holder" style="--width: 440; --height: 270;">
+						  <img src="./blog-3.jpg" width="440" height="270" loading="lazy"
+							alt="Risus purus namien parturient accumsan cacus" class="img-cover">
+		
+						  <time class="card-meta" datetime="2022-07-07">7 July 2022</time>
+						</div>
+		
+						<div class="card-content">
+		
+						  <h3 class="h3">
+							<a href="#" class="card-title">Risus purus namien parturient accumsan cacus</a>
+						  </h3>
+		
+						  <p class="card-text">
+							Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In hac
+							habitasse platea dictumst.
+						  </p>
+		
+						  <a href="#" class="btn-link has-before">Read More</a>
+		
+						</div>
+		
+					  </div>
+					</li>
+		
+				  </ul>
+		
+				</div>
+			  </section> -->
+		
+			</article>
+		  </main>
 		<Footer />
+		<script src="./script.js" defer></script>
 	</body>
 </html>
